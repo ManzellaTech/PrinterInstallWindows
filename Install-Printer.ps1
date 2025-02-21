@@ -73,7 +73,7 @@ function Get-InfFilePath {
         return $InfFilePath
     }
     elseif ($DriverPathItem.Extension -eq ".inf") {
-        $InfFilePath = $ExtractedDriverPath
+        $InfFilePath = $DriverPath
         return $InfFilePath
     }
     else {
